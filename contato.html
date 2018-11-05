@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTATO</title>
+        <meta charset=UTF-8> <!-- ISO-8859-1 -->
+        <meta name=viewport content="width=device-width, initial-scale=1.0"> <!-- não se deve travar o zoom-->
+        <meta name=description content=""> <!-- 360caracteres, porem com perdas após 160 caracteres-->
+        <meta name=keywords content=""> <!-- Opcional -->
+        <meta name=author content=''>
+        <meta name=application-name content=sosDentes>
+        <meta http-equiv="cache-control"   content="no-cache" />
+        <!-- favicon, arquivo de imagem podendo ser 8x8 - 16x16 - 32x32px com extensão .ico -->
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- CSS PADRÃO -->
+        <link href="css/jquery.modal.min.css" rel=stylesheet>
+        <link href="css/default.css" rel=stylesheet>
+
+        <!-- Telas Responsivas -->
+        <link rel=stylesheet media="screen and (max-width:480px)" href="css/style480.css">
+        <link rel=stylesheet media="screen and (min-width:481px) and (max-width:768px)" href="css/style768.css">
+        <link rel=stylesheet media="screen and (min-width:769px) and (max-width:1024px)" href="css/style1024.css">
+        <link rel=stylesheet media="screen and (min-width:1025px)" href="css/style1025.css">
+    </head>
+    <body>
+        <div id="corpo">
+            <nav id = "menu">
+                <Ul>
+                        <li> <img src="imagens/Logo.png" class="img-Logo"></li> 
+                    <li>   <a href="sosDentes.html">QUEM SOMOS</a></li>
+                    <li>   <a href="tratamentos.html">TRATAMENTOS</a></li>
+                    <li>   <a href="contato.html">CONTATO<img src="imagens/TEL.jpg" >(+55) 11 4194-5592</a></li>
+                </Ul>
+            </nav>
+            <div class="container-fluid bg-3 text-center">    
+                <!-- <h3 class="margin">Where To Find Me?</h3><br> -->
+                <div class="row" style="max-width: 1200px;">
+                    <div class="col-sm-4">
+                        <form>
+                            <h1><a href="contato.html">ENTRE EM CONTATO CONOSCO</a></h1>
+                            <br>
+                            <p>
+                                Avalie o nosso site:
+                                <input name= "avaliacao" type="radio">&nbsp; Ruim
+                                <input name= "avaliacao" type="radio">&nbsp; Regular
+                                <input name= "avaliacao" type="radio">&nbsp; Bom
+                                <input name= "avaliacao" type="radio">&nbsp; Muito bom
+                            </p>
+                            <p>
+                                <input type="text" id="txtNome" required placeholder="Nome*"/>
+                            </p>
+                            <p>
+                                <input type="tel" id="txtTelefone" required placeholder="Telefone*"/>
+                            </p>
+                            <p>
+                                <input type="email" id="txtEmail" required placeholder="E-mail*"/>
+                            </p>
+                            <textarea placeholder="Mensagem:*" id="mensagem"></textarea>
+                            <br/>
+                            <input style="margin-left:60px" type="submit"value=" -> Enviar"/>
+                            <input type="reset"value="limpar"/>
+                            <input type="button" value="Cadastre-se" id="btnCadastro"/>
+                        </form>
+                    </div>
+                    <div class="col-sm-4"> 
+                        <img src="imagens/end.png" class="img-responsive margin center-block"  alt="Image" />
+                    </div>
+                    <div class="col-sm-4"> 
+                        <img src="imagens/mapa.png" class="img-responsive margin center-block" alt="Image" usemap="#Localizacao" />
+                        <map name="Localizacao">
+                            <area shape="rect" coords="55,110,190,155" alt="R. Margarida Galvão, 130 - Jardim Silveira, Barueri - SP, 06434-110" href="https://goo.gl/maps/r2RMwZ9LG8N2" target="_blank" />
+                        </map>
+                    </div>
+                </div>
+            </div>   
+            
+            <div id="rodape">
+                <h2>
+                    ESTAMOS  TAMBÉM NO <a href="#facebook"> FACEBOOK <img src="imagens/facebook.png" class="img-social" /> </a> 
+                    & <a href="#instagram"> INSTAGRAM <img src="imagens/inst.png" class="img-social" /> </a>
+                </h2>
+            </div>     
+        </div>  
+        <div class="form-list"; id="cadastro">
+            <h2 class= "title-mini-with-line" > <span> Informações Pessoais </span> </h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            Nome:
+                        </td>
+                        <td>
+                            <input type="text" name="Nome" id="Nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-mail:
+                        </td>
+                        <td>
+                            <input type="text" name="E-mail" id="E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Telefone:
+                        </td>
+                        <td>
+                            <input type="text" name="Telefone" id="Telefone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Celular:
+                        </td>
+                        <td>
+                            <input type="text" name="Celular" id="Celular">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div class="button-set">
+                                <button type="submit" title="Enviar" class="button flash-button button-send">
+                                    <span>Enviar</span>
+                                </button>
+                            </div>   
+                        </td>
+                    </tr>
+
+                    <!-- <tr>
+                        <td>
+                            <input style="margin-right:60px" type="submit"value="  Salvar"/>
+                        </td>
+                        <td>
+
+                        </td> -->
+                    <!-- </tr> -->              
+                </table>
+            </form>
+
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.modal.min.js"></script>
+        <script src="js/site.js"></script>
+    </body>
+</html>

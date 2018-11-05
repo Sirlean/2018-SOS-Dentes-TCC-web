@@ -1,0 +1,124 @@
+h1 {
+    font-size: 20px;
+    margin-left:50px;
+    color:#2f40a1 ;
+}
+h2 {
+    font-size: 20px;
+    margin-left: 50px;
+    color:#2f40a1 ;
+    
+}
+h3 {
+    font-size: 18px;
+    /* margin-left: 270px; */
+    color:#2f40a1 ;
+    
+}
+p {
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+input {
+    border-radius:10px;border-color:#8cc6ff45;border-style:solid}
+body {
+    background-image:url("../imagens/sos.png"); 
+    background-repeat: no-repeat;
+    line-height: 250%;
+    /* height: 10000px; */
+
+}
+textarea {
+    border-radius:10px;border-color:#2a3faf;border-style:solid;height:100px;width:200px;border-width:2px;margin-left:30px;margin-bottom:15px;}
+p{
+    margin-left: 50px;
+    max-width: 600px;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+	
+}
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 40px 100px;
+    display: inline-block;
+  
+
+    /* visual do link */
+    background-color:#8cc6ff45;
+    color: #000000;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #2a3faf;
+	
+
+}
+#corpo
+{
+    background-color: rgba(243, 243, 243, 0.8);
+}
+#corpo{
+    min-height: 100vh;
+}
+#rodape {
+    /* position: fixed; */
+    /* bottom: 40px; */
+   /* left: 40px;*/
+    width: 100%;
+    height: 80px;
+    background-color:#8cc6ff45;
+   text-align: center;
+}
+img.img-home {
+    margin-bottom: 20px;
+}
+img.img-tratamento {
+    margin-bottom: 20px;
+    /* margin-left: 100px; */
+}
+.tabs-tratamento{
+    vertical-align: text-top;
+}
+.tab-opcao{
+    border: 2px solid #e4e6e7;
+    background-color: #00336d;
+    height: 100px;
+}
+
+.tab-opcao h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+img.img-extracao {
+    margin-bottom: 20px;
+    margin-left: 100px 
+   
+}
+
+li {
+    font-size: 18px;
+    margin-left: 50px;
+}
+#cadastro{
+display:none;
+}
+img.img-Logo {
+    margin-bottom: 20px;
+    margin-left: 100px; 
+    
+}
+.button-set{
+    margin-top: 10px;
+}
