@@ -1,0 +1,17 @@
+body{
+    /* background-color: red;
+    
+    background-image: none; */
+}
+
+img.img-home {
+    max-width: 250px;
+    max-height: 150PX;
+}
+img.img-tratamento {
+    max-width: 250px;
+    max-height: 150PX;
+}
+table{
+margin-left: 30px;    
+}

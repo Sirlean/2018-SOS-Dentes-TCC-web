@@ -1,0 +1,21 @@
+
+img.img-responsive {
+    width: 250px;
+    margin-top: 130px;
+}
+
+img.img-home {
+    max-width: 250px;
+    max-height: 150PX;
+}
+img.img-tratamento {
+    max-width: 250px;
+    max-height: 150PX;
+}
+img.img-extracao {
+    max-width: 600px;
+    max-height: 250px;
+}
+table{
+margin-left: 50px;    
+}
