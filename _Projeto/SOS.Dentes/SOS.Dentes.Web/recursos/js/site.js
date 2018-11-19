@@ -15,6 +15,7 @@ $(document).ready(function(){
             showClose: true
           });
     });
+    $('.Telefone').mask('(00) 0000-0000');
 });
 
 

@@ -122,10 +122,13 @@
     <Content Include="recursos\imagens\TEL.jpg" />
     <Content Include="recursos\imagens\whatsapp.png" />
     <Content Include="recursos\js\bootstrap.min.js" />
+    <Content Include="recursos\js\jquery.mask.min.js" />
     <Content Include="recursos\js\jquery.min.js" />
     <Content Include="recursos\js\jquery.modal.min.js" />
     <Content Include="recursos\js\site.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -136,7 +139,9 @@
   <ItemGroup>
     <Content Include="index.cshtml" />
     <Content Include="contato.cshtml" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

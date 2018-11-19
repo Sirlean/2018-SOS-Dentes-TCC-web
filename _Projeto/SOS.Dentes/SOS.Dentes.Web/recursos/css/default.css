@@ -46,12 +46,12 @@ p{
 #menu ul li { display: inline; }
 
 #menu ul li a {
-    padding: 40px 100px;
+    /*padding: 40px 100px;*/
     display: inline-block;
   
 
     /* visual do link */
-    background-color:#8cc6ff45;
+    background-color: #8cc6ff45;
     color: #000000;
     text-decoration: none;
     border-bottom:3px solid #EDEDED;

@@ -72,7 +72,7 @@
                             Telefone:
                         </td>
                         <td>
-                            <input type="text" name="Telefone" id="Telefone">
+                            <input type="tel" name="Telefone" id="Telefone" class="Telefone">
                         </td>
                     </tr>
                     <tr>
@@ -80,7 +80,7 @@
                             Celular:
                         </td>
                         <td>
-                            <input type="text" name="Celular" id="Celular">
+                            <input type="tel" name="Celular" id="Celular" class="Telefone">
                         </td>
                     </tr>
                     <tr>
@@ -129,12 +129,12 @@
                             <input type="text" id="txtNome" name="Nome" required placeholder="Nome*" />
                         </p>
                         <p>
-                            <input type="tel" id="txtTelefone" name="Telefone" required placeholder="Telefone*" />
+                            <input type="tel" id="txtTelefone" name="Telefone" required placeholder="Telefone*"  class="Telefone"/>
                         </p>
                         <p>
                             <input type="email" id="txtEmail" name="Email" required placeholder="E-mail*" />
                         </p>
-                        <textarea placeholder="Mensagem:*" name="Menagem" id="mensagem"></textarea>
+                        <textarea placeholder="Mensagem:*" name="Mensagem" id="mensagem"></textarea>
                         <br />
                         <input style="margin-left:60px" type="submit" value=" -> Enviar" />
                         <input type="reset" value="limpar" />
@@ -165,6 +165,7 @@
     <script src="~/recursos/js/jquery.min.js"></script>
     <script src="~/recursos/js/bootstrap.min.js"></script>
     <script src="~/recursos/js/jquery.modal.min.js"></script>
+    <script src="~/recursos/js/jquery.mask.min.js"></script>
     <script src="~/recursos/js/site.js"></script>
     @{
         if (Request.HttpMethod == "POST")

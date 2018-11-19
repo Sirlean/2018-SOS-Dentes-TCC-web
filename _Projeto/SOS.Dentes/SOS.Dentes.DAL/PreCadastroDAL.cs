@@ -27,8 +27,8 @@ namespace SOS.Dentes.DAL
 
         public void create(PreCadastro obj)
         {
-            string sqlInsert = "insert into PreCadastro(Nome, Email, Telefone, Celular) " +
-                " values('" + obj.Nome + "','" + obj.Email + "','" + obj.Telefone + "','" + obj.Celular + "')";
+            string sqlInsert = "insert into Paciente(Nome, Email, Tel_Fixo, Celular, Origem) " +
+                " values('" + obj.Nome + "','" + obj.Email + "','" + obj.Telefone + "','" + obj.Celular + "','WEB')";
 
             try
             {
@@ -49,7 +49,7 @@ namespace SOS.Dentes.DAL
 
         public void delete(PreCadastro obj)
         {
-            string sqlDelete = "delete from PreCadastro where id_PreCadastro =" + obj.IdPreCadastro;
+            string sqlDelete = "delete from Paciente where id_Paciente =" + obj.IdPreCadastro;
             try
             {
                 this.abrirConexao();
@@ -69,7 +69,7 @@ namespace SOS.Dentes.DAL
         public bool find(PreCadastro obj)
         {
             bool temRegistro = false;
-            string sqlFind = "select * from PreCadastro where id_PreCadastro = " + obj.IdPreCadastro;
+            string sqlFind = "select * from Paciente where id_Paciente = " + obj.IdPreCadastro;
             try
             {
                 this.abrirConexao();
@@ -98,7 +98,7 @@ namespace SOS.Dentes.DAL
         public List<PreCadastro> findAll()
         {
             List<PreCadastro> listaCategoria = new List<PreCadastro>();
-            string sqlFindAll = "select * from PreCadastro where order by id_PreCadastro ";
+            string sqlFindAll = "select * from Paciente where order by id_Paciente ";
             try
             {
                 this.abrirConexao();
@@ -130,12 +130,12 @@ namespace SOS.Dentes.DAL
 
         public void update(PreCadastro obj)
         {
-            string sqlUpdate = "update PreCadastro set " +
+            string sqlUpdate = "update Paciente set " +
                 " Nome = '" + obj.Nome + "'"+ 
                 ", Email = '" + obj.Email + "'" +
-                ", Telefone = '" + obj.Telefone + "'" +
+                ", Tel_Fixo = '" + obj.Telefone + "'" +
                 ", Celular = '" + obj.Celular + "'" +
-                " where id_PreCadastro = " + obj.IdPreCadastro; 
+                " where id_Paciente = " + obj.IdPreCadastro; 
             try
             {
                 this.abrirConexao();
